@@ -60,8 +60,8 @@ public class Login extends driverFactory{
 		lp.enterEmailAddress(EmailWithTimeStamp.emailWithTimeStamp());
 	}
 
-	@Then("user should get proper warning massage about credentials mismatch")
-	public void user_should_get_proper_warning_massage_about_credentials_mismatch() {
+	@Then("user should get proper warning message about credentials mismatch")
+	public void user_should_get_proper_warning_message_about_credentials_mismatch() {
 	    
 		Assert.assertTrue(lp.warningMessageOfCredentialsMissmatch().contains("Warning: No match for E-Mail Address and/or Password."));
 	}
