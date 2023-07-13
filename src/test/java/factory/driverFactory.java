@@ -11,7 +11,6 @@ public class driverFactory {
 	
 	public static WebDriver initializeBrowser(String browserName)
 	{
-//		WebDriver driver=null;
 		
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
@@ -26,9 +25,7 @@ public class driverFactory {
 			driver = new EdgeDriver();
 		}
 		
-		return driver;
-		
-		
+		return driver;		
 	}
 
 }
